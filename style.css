@@ -1,0 +1,675 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+nav {
+  background: #af3c3c;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: #e2dfdf;
+  margin: 0 0 0 12rem;
+  padding-top: 5px;
+}
+.header1 {
+  display: flex;
+  justify-content: space-between;
+  border-left: 1px #e2dfdf solid;
+  border-bottom: 1px #e2dfdf solid;
+  padding: 10px;
+}
+.header1 h4 {
+  padding-left: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  text-align: center;
+  word-spacing: 3px;
+}
+#social-icons {
+  letter-spacing: 1rem;
+}
+
+.header2 {
+  padding: 15px;
+  padding-bottom: 40px;
+  border-left: 1px #e2dfdf solid;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.header2 a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+.menu1 {
+  display: flex;
+  justify-content: space-between;
+  width: 43%;
+}
+.menu2 {
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+/* *****************HOMEPAGE********************** */
+#home1 {
+  display: flex;
+  flex-direction: row;
+}
+.col1 {
+  width: 50%;
+}
+.col1 img {
+  width: 100%;
+  height: 100%;
+}
+.col2 {
+  width: 50%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "sect1 sect2"
+    "sect3 sect4";
+}
+.sect1 {
+  grid-area: sect1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sect1 a {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 50px;
+  padding: 0;
+  text-decoration: none;
+  color: rgb(109, 131, 98);
+}
+
+.sect2 img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.sect3 {
+  grid-area: sect3;
+}
+.sect3 img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.sect4 {
+  grid-area: sect4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sect4 a {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 50px;
+  padding: 0;
+  text-decoration: none;
+  color: #c5cfc0;
+}
+
+#home2 {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  /* grid-template-rows: repeat(2,2fr); */
+  grid-template-areas:
+    "grid1 grid5 grid5 grid2"
+    "grid3 grid5 grid5 grid4";
+}
+/* .grid1,
+.grid2,
+.grid3,
+.grid4 {
+  height: 20rem;
+} */
+.grid1 {
+  grid-area: grid1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0edd8;
+}
+.grid1 a {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 50px;
+  padding: 0;
+  text-decoration: none;
+  color: #6d8362;
+}
+
+.grid2 {
+  grid-area: grid2;
+}
+.grid2 img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.grid3 {
+  grid-area: grid3;
+}
+.grid3 img {
+  max-width: 100%;
+  height: 100%;
+}
+.grid4 {
+  grid-area: grid4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #af3c3c;
+}
+.grid4 a {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 50px;
+  padding: 0;
+  text-decoration: none;
+  color: #c5cfc0;
+}
+
+.grid5 {
+  grid-area: grid5;
+  width: 100%;
+}
+.grid5 img {
+  max-width: 100%;
+  height: 100%;
+}
+
+/* ################## ABOUt ##################### */
+
+.about-heading {
+  background-image: url(images/7.jpg);
+  height: 30rem;
+  width: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7f7f7;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  letter-spacing: 10px;
+}
+
+.about1 {
+  background-color: #f7e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 4rem;
+}
+
+.about1 .col-1 {
+  width: 40%;
+}
+
+.about1 .col-1 img {
+  max-width: 90%;
+}
+
+.about1 .col-2 h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  color: #e48820;
+}
+
+.about1 .col-2 {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  line-height: 2rem;
+}
+
+.about1 .col-2 p {
+  margin-top: 1rem;
+  color: #af3c3c;
+}
+
+.about-page1 .intro {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #f7e6e6;
+  color: #af3c3c;
+}
+.intro p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+  line-height: 2rem;
+}
+
+.about-page2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+
+  background-color: #f7e6e6;
+}
+.about-page2 img {
+  max-width: 30%;
+}
+
+/* *******************CONTACT******************* */
+
+.contact-heading {
+  background-image: url(images/14.jpg);
+  height: 30rem;
+  width: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7f7f7;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  letter-spacing: 10px;
+}
+
+fieldset h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #af3c3c;
+  text-align: center;
+  margin: 2rem 0;
+}
+fieldset {
+  border: none;
+  padding: 3.5rem 0;
+  background-color: #f7e6e6c9;
+}
+input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+}
+textarea{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+}
+
+.textBox {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  width: 65%;
+  padding: 1.2rem 0.5rem;
+  border-radius: 0;
+  margin: auto;
+  border: 1px #af3c3c solid;
+  outline: none;
+  background-color: #f7e6e6c5;
+  color: #af3c3c;
+}
+
+.textBox::placeholder {
+  color: #af3c3c;
+}
+
+
+.messageBox {
+  margin: auto;
+  height: 10rem;
+  vertical-align: text-top;
+}
+
+.submitBtn {
+  padding: 1.6rem 2rem;
+  width: 200px;
+  margin: 30px auto;
+  background-color: #f7e6e6c5;
+  border: 1px #af3c3c solid;
+  color: #af3c3c;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: linear-gradient(to left, #f7e6e6c5 50%, #af3c3c 50%) right;
+  transition: 0.4s ease-out;
+  background-size: 200%;
+}
+
+.submitBtn:hover {
+  background-position: left;
+  color: white;
+}
+
+/* ################## BAKERY CAFES ##################### */
+
+.bakery-heading {
+  background-image: url(images/12.jpg);
+  height: 30rem;
+  width: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f7f7f7;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  letter-spacing: 10px;
+}
+
+.location1 {
+  background-color: #f7e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 4rem;
+}
+
+.location1 .col-1 {
+  width: 40%;
+}
+
+.location1 .col-1 img {
+  max-width: 90%;
+}
+
+.location1 .col-2 {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  line-height: 2rem;
+}
+.location1 .col-2 h2 {
+  font-size: 24px;
+  color: #af3c3c;
+}
+.location1 .col-2 h4 {
+  font-size: 18px;
+  color: #e48820;
+}
+
+.location1 .col-2 p {
+  font-size: 13px;
+  color: #af3c3c;
+}
+.location1 .col-2 button {
+  padding: 1.2rem 1rem;
+  width: 200px;
+  margin: 15px auto;
+  background-color: #f7e6e6c5;
+  border: 1px #af3c3c solid;
+  color: #af3c3c;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: linear-gradient(to left, #f7e6e6c5 50%, #af3c3c 50%) right;
+  transition: 0.4s ease-out;
+  background-size: 200%;
+}
+
+.location1 .col-2 button:hover {
+  background-position: left;
+  color: white;
+}
+
+.location2 {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+  padding: 3rem 4rem;
+}
+
+.location2 .col-1 {
+  width: 40%;
+}
+
+.location2 .col-1 img {
+  max-width: 90%;
+}
+
+.location2 .col-2 {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  line-height: 2rem;
+}
+.location2 .col-2 h2 {
+  font-size: 24px;
+  color: #af3c3c;
+}
+.location2 .col-2 h4 {
+  font-size: 18px;
+  color: #e48820;
+}
+
+.location2 .col-2 p {
+  font-size: 13px;
+  color: #af3c3c;
+}
+
+.location1 .col-2 button a{
+  text-decoration:none;
+  color: inherit;
+}
+
+.location2 .col-2 button a{
+  text-decoration:none;
+  color: inherit;
+}
+
+.location2 .col-2 button {
+  padding: 1.2rem 1rem;
+  width: 200px;
+  margin: 15px auto;
+  background-color: #f7e6e6c5;
+  border: 1px #af3c3c solid;
+  color: #af3c3c;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: linear-gradient(to left, #f7e6e6c5 50%, #af3c3c 50%) right;
+  transition: 0.4s ease-out;
+  background-size: 200%;
+}
+
+.location2 .col-2 button:hover {
+  background-position: left;
+  color: white;
+}
+
+/* ********************FOOTER******************** */
+footer {
+  background-color: #6d8362;
+}
+.address {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 18px;
+  color: #f7f7f7;
+  padding: 4rem;
+}
+
+.copyright {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 300;
+  color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 17rem 2rem 17rem;
+}
+
+/* ******************** ORDER PAGE ********************* */
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+
+.cards {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 12px;
+  border-radius: 20px;
+  width: 300px;
+  margin: 2rem;
+  padding: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  /* background-color: #f7e6e6; */
+  box-shadow: 1px 2px 12px 3px #bd545463;
+}
+.imgBox {
+  margin-bottom: 10px;
+}
+.cards h2 {
+  color: #af3c3c;
+  font-size: 25px;
+}
+
+.cards h4 {
+  color: #af3c3c;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.cards select {
+  background-color: #f7e6e6 !important;
+  border: 1px #af3c3c solid;
+  padding: 0.5rem;
+  margin: 2rem 0;
+  outline: none;
+  border-radius: 7px;
+}
+
+.orderBtns {
+  display: flex;
+  margin: 0;
+}
+.orderBtns a{
+  text-decoration:  none;
+  color:inherit;
+}
+
+.orderBtns button{
+  margin: 5px auto;
+  background-color: #f7e6e6c5;
+  border: 1px #af3c3c solid;
+  color: #af3c3c;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: linear-gradient(to left, #f7e6e6c5 50%, #af3c3c 50%) right;
+  transition: 0.4s ease-out;
+  background-size: 200%;
+}
+
+.buyBtn {
+  width: 150px;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  border-radius: 7px;
+}
+
+.orderBtns button:hover {
+  background-position: left;
+  color: white;
+}
